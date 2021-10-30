@@ -6,5 +6,6 @@ export interface News {
     categorie: Categories;
     author: string;
     body: string;
+    bodyMin: string,
     date: string;
 }
