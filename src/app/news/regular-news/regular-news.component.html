@@ -1,0 +1,22 @@
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-1 row-sm-2 row-md-3 g-3">
+        <ng-container *ngFor="let item of listRegularNews">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="{{item.picture}}" style="max-width: 100%;">
+              <div class="card-body">
+                <p class="card-text">{{item.bodyMin}}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Leer Más</button>
+                  </div>
+                  <small class="text-muted">{{item.date}}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          </ng-container>
+      </div>
+    </div>
+  </div>
